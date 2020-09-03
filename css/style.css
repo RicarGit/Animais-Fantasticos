@@ -96,7 +96,10 @@ body {
     height: 370px;
     overflow-y: scroll;
     grid-column: 2;
-    scrollbar-color: #fb5 #faf6ed;
+    scrollbar-color: #fb5 transparent;
+}
+.animais-lista li {
+    cursor: pointer;
 }
 .animais-desc {
     grid-column: 3;
@@ -157,6 +160,25 @@ body {
     padding: 20px;
     font-family: "IBM Plex Mono", monospace;
     font-weight: bold;
+}
+
+.js .js-tabcontent section {
+    display: none;
+}
+.js-tabcontent section.active {
+    display: block;
+    animation: show .5s forwards;
+}
+
+@keyframes show {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 
 
