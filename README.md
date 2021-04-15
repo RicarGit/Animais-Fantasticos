@@ -4,8 +4,8 @@
 
 # Adding the final result of the pages on my projects!
 
-![](Animais Fantásticos.jpg)
+![](Animais-Fantásticos.jpg)
 
 # Mobile
 
-![](Animais Fantásticos-Mobile.jpg)
+![](Animais-Fantásticos-Mobile.jpg)
