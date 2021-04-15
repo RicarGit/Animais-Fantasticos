@@ -68,3 +68,26 @@ function initSmoothScroll() {
     })
 }
 initSmoothScroll();
+
+//Scroll Animation
+function initScrollAnimation() {
+    const sections = document.querySelectorAll('.js-scroll');
+
+    if (sections.length) {
+        const halfWindow = window.innerHeight * 0.65;
+
+        function animaScroll() {
+            sections.forEach((section) => {
+                const sectionTop = section.getBoundingClientRect().top;
+                const isSectionVisible = (sectionTop - halfWindow) < 0;
+
+                if (isSectionVisible) {
+                    section.classList.add(activeClass);
+                }
+            })
+        }
+        animaScroll();
+        window.addEventListener('scroll', animaScroll);
+    }
+}
+initScrollAnimation();
